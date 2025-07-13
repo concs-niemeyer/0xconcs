@@ -25,7 +25,7 @@ const certificates = [
 
 export default function CertificatesSection() {
   return (
-    <section className="bg-gray-300 py-24 sm:py-32">
+    <section id="background" className="bg-gray-300 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-lg font-semibold leading-8 text-indigo-600">Certificates</h2>

@@ -42,7 +42,7 @@ export default function HeroContent() {
           <div className="fixed top-0 left-0 w-full h-full opacity-20 pointer-events-none">
             <MatrixRain />
           </div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl py-20 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
                   Welcome,

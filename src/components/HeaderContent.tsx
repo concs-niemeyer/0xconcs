@@ -6,5 +6,5 @@ export default function HeaderContent() {
 
   const hasNFT = useHasNFT()
 
-  return <div>{hasNFT ? <PremiumHeader /> : <StandardHeader />}</div>;
+  return <div className="w-full fixed z-30">{hasNFT ? <PremiumHeader /> : <StandardHeader />}</div>;
 }

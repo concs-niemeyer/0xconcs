@@ -28,7 +28,7 @@ const premiumProjects = [
 
 export default function PremiumProjects() {
   return (
-    <section className="bg-gray-700 py-16 px-6 sm:px-12 text-green-400 font-mono">
+    <section id="projects" className="bg-gray-700 py-16 px-6 sm:px-12 text-green-400 font-mono">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 tracking-wide">
           <BrainCircuit className="inline-block mr-2" size={36} />
