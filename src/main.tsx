@@ -7,7 +7,7 @@ import App from './App.tsx'
 import { config } from './wagmi.ts'
 import '../index.css'
 
-globalThis.Buffer = Buffer
+(globalThis as any).Buffer = Buffer
 
 const queryClient = new QueryClient()
 
