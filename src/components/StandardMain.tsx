@@ -2,6 +2,7 @@ import { useAccount } from "wagmi";
 import BitcoinPrice from "./BtcPrice";
 import useHasEth from "../hooks/useHasEth";
 import NeonLine from "./NeonLine";
+import EthExclusiveContent from "./EthExclusiveContent";
 
 export default function StandardMain() {
   const { address } = useAccount();
@@ -21,9 +22,7 @@ export default function StandardMain() {
           </p>
         ) : (
           <div className="text-green-400 font-semibold text-lg">
-            <div>
-              <p>🎉 This is exclusive content for ETH holders!</p>
-            </div>
+            <EthExclusiveContent/>
           </div>
         )}
       </div>

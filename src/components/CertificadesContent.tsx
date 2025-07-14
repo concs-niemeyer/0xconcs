@@ -1,4 +1,3 @@
-import { BadgeCheck } from "lucide-react";
 
 const certificates = [
   {
@@ -46,7 +45,6 @@ export default function CertificatesSection() {
                 <h3 className="text-lg font-semibold leading-6 text-gray-900">{cert.title}</h3>
                 <p className="text-sm text-indigo-600">{cert.issuer}</p>
               </div>
-              <BadgeCheck className="mt-4 h-6 w-6 text-green-500" />
             </div>
           ))}
         </div>
