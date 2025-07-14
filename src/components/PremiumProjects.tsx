@@ -22,7 +22,7 @@ const premiumProjects = [
     name: "StaterApp",
     description:
       "Application for optimizing crypto asset portfolios using CoinGecko API data and machine learning algorithms.",
-    techs: ["Python", "CoinGecko API", "SQLite", "LIVE!"],
+    techs: ["Python", "CoinGecko API", "SQLite"],
   },
 ];
 

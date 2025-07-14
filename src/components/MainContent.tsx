@@ -1,6 +1,7 @@
 import { useAccount } from "wagmi";
 import { useHasNFT } from "../hooks/useHasNFT";
 import StandardMain from "./StandardMain";
+import CryptoRastaContent from "./CryptoRastaContent";
 
 export default function MainContent() {
   const { isConnected } = useAccount();
@@ -15,11 +16,8 @@ export default function MainContent() {
             <div className="mt-12 p-4 rounded-xl shadow-lg bg-gray-800 border border-gray-600">
               {hasNFT ? (
                 <div>
-                  <p className="text-green-400 font-semibold text-lg">
-                  🎉 You are part of the communitye <span className="text-yellow-400">CryptoRastas</span>!
-                </p>
-                
-                  </div>
+                <CryptoRastaContent/>
+                </div>
               ) : (
                 <p className="text-red-400 font-semibold text-lg">
                   🚫 You need a CryptoRasta NFT to access this exclusive content.
