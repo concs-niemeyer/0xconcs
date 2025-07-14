@@ -9,7 +9,7 @@ import { useAccount } from "wagmi";
 function App() {
   const { isConnected } = useAccount();
   return (
-    <>
+     <div className="scroll-smooth">
       <HeaderSection />
       <HeroSection />
       <AboutSection />
@@ -26,7 +26,7 @@ function App() {
       </div>
       <ProjectsSection />
       <ContactSection />
-    </>
+    </div>
   );
 }
 
