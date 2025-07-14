@@ -1,5 +1,6 @@
 import { useAccount } from "wagmi";
 import MatrixRain from "./MatrixRain";
+import NeonLine from "./NeonLine";
 
 export default function HeroContent() {
   const account = useAccount();
@@ -30,10 +31,7 @@ export default function HeroContent() {
         "Back-testing with CoinGecko data, risk/return analysis, correlation matrix, and Python-based modeling.",
     },
   ];
-
-  const NeonLine = () => (
-    <div className="w-4/5 h-0.5 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto my-8" />
-  );
+ 
   return (
     <>
       {account.isConnected ? (

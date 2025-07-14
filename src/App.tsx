@@ -19,9 +19,7 @@ function App() {
         ) : (
           <>
             <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md">
-              <p>
-                🔐 Connect your wallet to access exclusive content
-              </p>
+              <p>🔐 Connect your wallet to access exclusive content</p>
             </div>
           </>
         )}

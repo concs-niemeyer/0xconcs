@@ -25,15 +25,15 @@ Instalação
    git clone https://github.com/concs-niemeyer/0xconcs.git
 
 2. Acesse o diretório do projeto:
-   cd web3-gated-content
+   cd 0xconcs
 
 3. Instale as dependências:
    npm install
 
 4. Crie um arquivo `.env.local` com as variáveis abaixo:
 
-  VITE_WC_PROJECT_ID=*********************
-  VITE_ETHERSCAN_API_KEY=*****************
+- VITE_WC_PROJECT_ID=*********************
+- VITE_ETHERSCAN_API_KEY=*****************
 
 
 Uso

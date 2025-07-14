@@ -30,11 +30,11 @@ export default function useHasEth(address: string | undefined): boolean | null {
           const thresholdInWei = BigInt(1e15); // 0.001 ETH em wei (1 ETH = 1e18 wei)
           setHasEth(balanceInWei >= thresholdInWei);
         } else {
-          console.warn("Erro na resposta da API Etherscan:", response.data.message);
+          console.warn("Error in Etherscan API response:", response.data.message);
           setHasEth(false);
         }
       } catch (err) {
-        console.error("Erro ao buscar saldo no Etherscan:", err);
+        console.error("Error checking balance on Etherscan:", err);
         setHasEth(false);
       }
     };
