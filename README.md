@@ -32,7 +32,7 @@ Instalação
 
 4. Crie um arquivo `.env.local` com as variáveis abaixo:
 
-- VITE_WC_PROJECT_ID=*********************
+- VITE_WC_PROJECT_ID=***********************
 - VITE_ETHERSCAN_API_KEY=*****************
 
 
@@ -50,11 +50,10 @@ então o conteúdo será exibido.
 
 Tecnologias
 -----------
-- Next.js
-- React
+- React w/ Vite
+- Axios
 - Wagmi + Viem
-- Tailwind CSS
-- RPC Provider (Alchemy, Infura, etc.)
+- Tailwind CSS + Lucide Icons
 
 Licença
 -------
