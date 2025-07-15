@@ -1,8 +1,8 @@
 import {
-  Activity,
   DollarSign,
   Globe,
   Network,
+  PiggyBank,
   TrendingUp,
   Zap,
 } from "lucide-react";
@@ -153,7 +153,7 @@ export default function EthExclusiveContent() {
         <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 to-pink-900/10"></div>
         <div className="bg-gray-900 rounded-lg shadow-2xl p-8 text-center border border-red-500 relative z-10">
           <div className="text-red-400 mb-4">
-            <Activity className="w-12 h-12 mx-auto" />
+            <PiggyBank className="w-12 h-12 mx-auto" />
           </div>
           <h2 className="text-2xl font-bold text-white mb-2 font-mono">ERROR</h2>
           <p className="text-gray-400 mb-4 font-mono">{ethData.error}</p>
@@ -205,7 +205,7 @@ export default function EthExclusiveContent() {
             title="ETH Staked"
             value={formatEther(supply?.Eth2Staking)}
             subtitle="Ethereum locked in staking"
-            icon={Activity}
+            icon={PiggyBank}
             color="bg-gradient-to-r from-purple-500 to-pink-600"
           />
           <StatCard
