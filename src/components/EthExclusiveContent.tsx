@@ -1,7 +1,6 @@
 import {
   Activity,
   DollarSign,
-  Globe,
   Network,
   PiggyBank,
   SquarePercent,
