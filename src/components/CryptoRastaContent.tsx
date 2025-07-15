@@ -1,33 +1,20 @@
-import { useEffect } from "react";
+import CountdownToEvent from "./CountDownToEvent";
 
 export default function CryptoRastaContent() {
-  useEffect(() => {
-    // Carrega o script de embed do X (antigo Twitter)
-    const script = document.createElement("script");
-    script.src = "https://platform.twitter.com/widgets.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script); // remove ao desmontar
-    };
-  }, []);
-
   return (
-    <>
-      <p className="text-green-400 font-semibold text-lg">
-        🎉 You are part of the community{" "}
-        <span className="text-yellow-400">CryptoRastas</span>!
+    <section className="max-w-3xl mx-auto px-6 py-10 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-lg border border-gray-700">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-green-400 mb-4">
+        🎉 Welcome to the <span className="text-yellow-400">CryptoRastas</span> Community!
+      </h2>
+      <p className="text-center text-gray-300 text-base md:text-lg mb-8">
+        Get ready for the upcoming event. Stay tuned and spread the vibes! 🌿
       </p>
 
-      {/* Embed do post do X */}
-      <blockquote className="twitter-tweet">
-        <a href="https://x.com/cryptorastas/status/1943735891165344161"></a>
-      </blockquote>
-
-      <p className="text-white mt-4">
-        Check out our latest updates and community activities on our social media.
-      </p>
-    </>
+      <div className="flex justify-center">
+        <div className="bg-gray-800 px-6 py-4 rounded-xl shadow-inner border border-gray-700">
+          <CountdownToEvent />
+        </div>
+      </div>
+    </section>
   );
 }
