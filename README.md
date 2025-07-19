@@ -57,8 +57,8 @@ Tecnologias
 
 Licença
 -------
-MIT © Seu Nome (https://github.com/concs-niemeyer)
+MIT © (https://github.com/concs-niemeyer)
 
 Inspiração
 ----------
-Esse projeto foi criado como parte de um portfólio para demonstrar autenticação descentralizada e gating de conteúdo via Web3. Pode ser usado em projetos educacionais, NFTs utilitários ou clubes exclusivos baseados em blockchain.
+Esse projeto foi criado como parte de um portfólio para demonstrar autenticação descentralizada e acesso a conteúdo exclusivo por token via Web3. Pode ser usado em projetos educacionais, NFTs utilitários ou clubes exclusivos baseados em blockchain.
