@@ -5,6 +5,8 @@ import MainSection from "./components/MainContent";
 import ProjectsSection from "./components/ProjectsContent";
 import ContactSection from "./components/ContactContent";
 import { useAccount } from "wagmi";
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const { isConnected } = useAccount();
@@ -26,6 +28,8 @@ function App() {
       </div>
       <ProjectsSection />
       <ContactSection />
+      < SpeedInsights/>
+      <Analytics/>
     </div>
   );
 }
