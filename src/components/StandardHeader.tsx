@@ -1,4 +1,12 @@
-import { User, LogOut, Menu, X, Wallet, Bitcoin, Radiation } from "lucide-react";
+import {
+  User,
+  LogOut,
+  Menu,
+  X,
+  Wallet,
+  Bitcoin,
+  Radiation,
+} from "lucide-react";
 import { useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
@@ -17,21 +25,40 @@ export default function StandardHeader() {
     <header className="relative z-50 bg-gradient-to-r from-gray-800 to-gray-900 shadow-lg border-b border-gray-700">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 py-8 flex items-center justify-between">
         {/* Logo ou ícone */}
-        <div className="flex items-center space-x-3">
-            {account.isConnected ? (
-                <Bitcoin className="w-8 h-8 text-white" />
-            ):(
-                <Radiation className="w-8 h-8 text-white"/>
-            )}
-          <span className="text-white font-bold text-2xl tracking-tight">Concs</span>
-        </div>
+        <a href="#home" className="flex items-center space-x-3">
+          {account.isConnected ? (
+            <Bitcoin className="w-8 h-8 text-white" />
+          ) : (
+            <Radiation className="w-8 h-8 text-white" />
+          )}
+          <span className="text-white font-bold text-2xl tracking-tight">
+            Concs
+          </span>
+        </a>
 
         {/* Navegação */}
         <nav className="hidden md:flex space-x-10">
-          <a href="#home" className="text-white hover:text-blue-400 transition">Home</a>
-          <a href="#background" className="text-white hover:text-blue-400 transition">Background</a>
-          <a href="#projects" className="text-white hover:text-blue-400 transition">Projects</a>
-          <a href="#contact" className="text-white hover:text-blue-400 transition">Contact</a>
+          <a href="#home" className="text-white hover:text-blue-400 transition">
+            Home
+          </a>
+          <a
+            href="#background"
+            className="text-white hover:text-blue-400 transition"
+          >
+            Background
+          </a>
+          <a
+            href="#projects"
+            className="text-white hover:text-blue-400 transition"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="text-white hover:text-blue-400 transition"
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Wallet / Conta */}
@@ -58,7 +85,11 @@ export default function StandardHeader() {
                 onClick={() => setIsWalletMenuOpen(!isWalletMenuOpen)}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
               >
-                {isWalletMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                {isWalletMenuOpen ? (
+                  <X className="w-5 h-5" />
+                ) : (
+                  <Menu className="w-5 h-5" />
+                )}
                 <span>Conectar Carteira</span>
               </button>
 
@@ -86,10 +117,14 @@ export default function StandardHeader() {
                         ))}
                       </div>
                       {status !== "idle" && (
-                        <div className="mt-2 text-sm text-gray-500">Status: {status}</div>
+                        <div className="mt-2 text-sm text-gray-500">
+                          Status: {status}
+                        </div>
                       )}
                       {error && (
-                        <div className="mt-2 text-sm text-red-500">{error.message}</div>
+                        <div className="mt-2 text-sm text-red-500">
+                          {error.message}
+                        </div>
                       )}
                     </div>
                   </div>
